@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "601642530852",
+    "project_id": "sign-up-sign-in-database",
+    "storage_bucket": "sign-up-sign-in-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601642530852:android:b0a221611f936d280f80b1",
+        "android_client_info": {
+          "package_name": "com.example.advanceduianddatabaseapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfO1H4uEpi0HuF6lTcO-umjFdN80zelFg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

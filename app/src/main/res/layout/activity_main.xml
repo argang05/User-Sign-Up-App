@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="160dp"
+        android:backgroundTint="@android:color/transparent"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unique ID:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="290dp"
+                android:layout_height="60dp"
+                app:startIconDrawable="@drawable/baseline_fingerprint_24"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/uniqueId"
+                    android:background="@color/lightGray"
+                    android:hint="      Enter Your Unique ID..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="290dp"
+                app:startIconDrawable="@drawable/baseline_email_24"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/emailId"
+                    android:background="@color/lightGray"
+                    android:hint="      Enter Your Email..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="290dp"
+                app:endIconMode="password_toggle"
+                android:layout_height="60dp"
+                android:layout_marginBottom="12dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password"
+                    android:background="@color/lightGray"
+                    android:hint="Enter Your Password..." />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signUpButton"
+                android:backgroundTint="@color/black"
+                android:layout_width="230dp"
+                android:layout_height="60dp"
+                android:text="Sign Up!"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/signInTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SignIn!"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="55dp"/>
+</LinearLayout>
